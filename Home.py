@@ -1,6 +1,6 @@
 import streamlit as st
-# import json
-# from streamlit_lottie import st_lottie
+import json
+from streamlit_lottie import st_lottie
 
 st.video('https://lottiefiles.com/animations/adorable-hombre-de-nieve-saltarin-S3P0IhUZ3l', format="video/mp4", start_time=0)
 
