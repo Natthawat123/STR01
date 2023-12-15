@@ -1,16 +1,8 @@
 import streamlit as st
-import json
-from streamlit_lottie import st_lottie
+# import json
+# from streamlit_lottie import st_lottie
 
-def load_lottieurl(url: str):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
-
-lot3="https://lottiefiles.com/animations/adorable-hombre-de-nieve-saltarin-S3P0IhUZ3l"
-lottie3 = load_lottieurl(lot3)
-st_lottie(lottie3)
+st.video('https://lottiefiles.com/animations/adorable-hombre-de-nieve-saltarin-S3P0IhUZ3l', format="video/mp4", start_time=0)
 
 st.title('การทดสอบเขียนเว็บด้วย Python')
 st.header('Natthawat Hiranwong')
