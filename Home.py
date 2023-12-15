@@ -1,4 +1,18 @@
 import streamlit as st
+import json
+from streamlit_lottie import st_lottie
+
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+lot3="https://lottiefiles.com/animations/adorable-hombre-de-nieve-saltarin-S3P0IhUZ3l.json"
+lottie3 = load_lottieurl(lot3)
+st_lottie(lottie3)
+lottie.host
+
 
 st.title('การทดสอบเขียนเว็บด้วย Python')
 st.header('Natthawat Hiranwong')
@@ -76,15 +90,17 @@ if st.button("ทำนายผล"):
 
    if out[0]=="Setosa":
       st.image("./pic/iris1.jfif")
-    #   st.header("Setosa")
+      st.header("Setosa")
    elif out[0]=="Versicolor":
       st.image("./pic/iris2.jfif")
-    #   st.header("Versicolor")
+      st.header("Versicolor")
    else:
       st.image("./pic/iris3.jfif")  
-    #   st.header("Verginiga")
+      st.header("Verginiga")
    st.button("ไม่ทำนายผล")
 else :
     st.button("ไม่ทำนายผล")
+    
+    
     
 st.video('https://youtu.be/zivpBXVprMI?si=svpM3fwUiwIzZTsL', format="video/mp4", start_time=0)
