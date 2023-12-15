@@ -11,8 +11,6 @@ def load_lottieurl(url: str):
 lot3="https://lottiefiles.com/animations/adorable-hombre-de-nieve-saltarin-S3P0IhUZ3l.json"
 lottie3 = load_lottieurl(lot3)
 st_lottie(lottie3)
-lottie.host
-
 
 st.title('การทดสอบเขียนเว็บด้วย Python')
 st.header('Natthawat Hiranwong')
