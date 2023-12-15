@@ -1,9 +1,9 @@
 import streamlit as st
+import numpy as np
 import matplotlib.pyplot as plt
-
+#data
 st.header('Natthawat Hiranwong')
 
-x =[21, 62, 10, 53]
-y= [25, 70, 25, 55]
-plt.bar(x,y)
-plt.show
+data_dict = {'PHP':33, 'C':28, 'Java':30}
+courses = list(data_dict.keys())
+values = list(data_dict.values())
