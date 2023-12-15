@@ -1,8 +1,8 @@
 import streamlit as st
-import json
-from streamlit_lottie import st_lottie
+# import json
+# from streamlit_lottie import st_lottie
 
-st.video('https://lottiefiles.com/animations/adorable-hombre-de-nieve-saltarin-S3P0IhUZ3l', format="video/mp4", start_time=0)
+st.image('https://lottiefiles.com/animations/adorable-hombre-de-nieve-saltarin-S3P0IhUZ3l', caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 st.title('การทดสอบเขียนเว็บด้วย Python')
 st.header('Natthawat Hiranwong')
