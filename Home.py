@@ -8,7 +8,7 @@ def load_lottieurl(url: str):
         return None
     return r.json()
 
-lot3="https://lottiefiles.com/animations/adorable-hombre-de-nieve-saltarin-S3P0IhUZ3l.json"
+lot3="https://lottiefiles.com/animations/adorable-hombre-de-nieve-saltarin-S3P0IhUZ3l"
 lottie3 = load_lottieurl(lot3)
 st_lottie(lottie3)
 
