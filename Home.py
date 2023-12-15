@@ -1,5 +1,5 @@
 import streamlit as st
-
+st.balloons()
 st.title('การทดสอบเขียนเว็บด้วย Python')
 st.header('Natthawat Hiranwong')
 st.subheader('สาขาวิชาวิทยาการข้อมูล')
